@@ -12,3 +12,5 @@ run with root privileges.
 The second application is KeyPress server **key_press_server.py**. It should
 run with X server user rights. The server listens for keyboard shortcut request
 and simulated the keyboard shortcut pressing every time the request received.
+
+ToDo: Document the script installation.
