@@ -43,4 +43,11 @@ sudo systemctl daemon-reload
 sudo systemctl enable key_capture.service
 ```
 
-ToDo: Document the script installation.
+6) Run key press server at user startup.
+```
+echo "/home/kiosek/kiosk_tab_change/key_press_server.py &" >> ~/.config/lxsession/LXDE/autostart
+```
+
+7) Restart the user session.
+
+ToDo: Test and update the installation...
