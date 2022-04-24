@@ -1,6 +1,5 @@
 [Unit]
-Description=Key capture service captures keyboard input. When keyboard is idle,
-it sends commands key press server to simulate CTRL+TAB.
+Description=Key capture service captures keyboard input.
 After=syslog.target network.target
 
 [Service]
