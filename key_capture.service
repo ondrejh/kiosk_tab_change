@@ -1,0 +1,11 @@
+[Unit]
+Description=Key capture service captures keyboard input. When keyboard is idle,
+it sends commands key press server to simulate CTRL+TAB.
+After=syslog.target network.target
+
+[Service]
+Type=idle
+ExecStart=/usr/bin/python3 /home/kiosek/kiosk_tab_change/key_capture_service.py
+
+[Install]
+WantedBy=multi-user.target
